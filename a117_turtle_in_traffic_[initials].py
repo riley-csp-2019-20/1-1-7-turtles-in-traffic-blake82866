@@ -1,4 +1,4 @@
-#   a117_turtles_in_traffic.py
+ #   a117_turtles_in_traffic.py
 #   Move turtles horizontally and vertically across screen.
 #   Stopping turtles when they collide.
 import turtle as trtl
@@ -47,16 +47,13 @@ while steps < 50:
 			x2 =h.xcor() 
 			y2 =h.ycor() 
 			
-			if (abs(x1 - x2 <= 20) and abs(y1 - y2)):
+			if (abs(x1 - x2 <= 20) and abs(y1 - y2 <= 20)):
 				horiz_turtles.remove(h)
 				vert_turtles.remove(v)
 				h.color("gray")
 				v.color("gray")
-			paused = int(turtle_shapes)
 			
-
-
-
+			
 	steps = steps + 1
 	#while loop or for loop to make each turtle move using t.forward(10)
 	#find x, y by using t.xcor(), and t.ycor()
